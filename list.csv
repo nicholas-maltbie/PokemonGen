@@ -222,6 +222,7 @@
 206,Dunsparce,Normal,
 207,Gligar,Ground,Flying
 208,Steelix,Steel,Ground
+208,Steelix-mega,Steel,Ground
 209,Snubbull,Fairy,
 210,Granbull,Fairy,
 211,Qwilfish,Water,Poison
@@ -345,6 +346,7 @@
 317,Swalot,Poison,
 318,Carvanha,Water,Dark
 319,Sharpedo,Water,Dark
+319,Sharpedo-mega,Water,Dark
 320,Wailmer,Water,
 321,Wailord,Water,
 322,Numel,Fire,Ground
@@ -361,7 +363,7 @@
 332,Cacturne,Grass,Dark
 333,Swablu,Normal,Flying
 334,Altaria,Dragon,Flying
-334,Altaria,Dragon,Fairy
+334,Altaria-mega,Dragon,Fairy
 335,Zangoose,Normal,
 336,Seviper,Poison,
 337,Lunatone,Rock,Psychic
@@ -465,7 +467,8 @@
 420,Cherubi,Grass,
 421,Cherrim-overcast,Grass,
 421,Cherrim-sunny,Grass,
-422,Shellos,Water,
+422,Shellos-east,Water,
+422,Shellos-west,Water,
 423,Gastrodon-east,Water,Ground
 423,Gastrodon-west,Water,Ground
 424,Ambipom,Normal,
@@ -577,7 +580,8 @@
 518,Musharna,Psychic,
 519,Pidove,Normal,Flying
 520,Tranquill,Normal,Flying
-521,Unfezant,Normal,Flying
+521,Unfezant-male,Normal,Flying
+521,Unfezant-female,Normal,Flying
 522,Blitzle,Electric,
 523,Zebstrika,Electric,
 524,Roggenrola,Rock,
@@ -762,7 +766,8 @@
 666,Vivillon-poke-ball,Bug,Flying
 666,Vivillon-fancy,Bug,Flying
 667,Litleo,Fire,Normal
-668,Pyroar,Fire,Normal
+668,Pyroar-female,Fire,Normal
+668,Pyroar-male,Fire,Normal
 669,Flabebe,Fairy,
 670,Floette,Fairy,
 671,Florges,Fairy,
@@ -775,7 +780,8 @@
 676,Furfrou-star,Normal,
 676,Furfrou-diamond,Normal,
 677,Espurr,Psychic,
-678,Meowstic,Psychic,
+678,Meowstic-male,Psychic,
+678,Meowstic-female,Psychic,
 679,Honedge,Steel,Ghost
 680,Doublade,Steel,Ghost
 681,Aegislash-blade,Steel,Ghost
