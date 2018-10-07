@@ -23,6 +23,7 @@ Now that we have the full dataset, this can now be used to generate the DCGAN fo
 
 ```bash
 git submodule init
+git submodule update
 
 python DCGAN-tensorflow/main.py --input_height=128 --output_height=128 --checkpoint_dir=data/checkpoint_128 --sample_dir=data/samples_128 --train --crop=False --visualize=True --dataset=pokemon_imgs_128_aug
 ```
