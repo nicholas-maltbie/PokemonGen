@@ -42,7 +42,9 @@ if __name__ == "__main__":
     parser.add_argument('output_dir', help="Directory to write output images to")
     parser.add_argument('-s', metavar="256", type=int, help="Size to scale image to (default 256)", default=256)
     parser.add_argument('-b', metavar="0.1", type=float, help="Percent of image to use as buffer (default 0.1)", default=0.1)
+    parser.add_argument("-q", "--quiet", dest="quiet", action='store_true', help="Should downlaod information be shwon")
+    parser.add_argument("-t", "--num_threads", dest="num_threads", metavar=32, type=int, help="Number of threads to use when resizing images (default 32)")
 
     args = parser.parse_args()
-    main(args.image_dir, args.data_file, args.output_dir, width=args.s, height=args.s, buffer=args.b)
+    main(args.image_dir, args.data_file, args.output_dir, width=args.s, height=args.s, num_tasks=args.num_threads, buffer=args.b, log = not args.quiet)
 
