@@ -46,7 +46,7 @@ class augmentor:
     def augment_file(self, image, save_path):
         dup = image.copy().convert("RGBA")
         resize_fac = 1 - (np.random.rand() * self.zoom_range * 2 - self.zoom_range)
-        rot_deg = np.random.rand() * self.rot_range * 2 - self.zoom_range
+        rot_deg = np.random.rand() * self.rot_range * 2 - self.rot_range
         shift_x = round(np.random.rand() * self.shift_range * image.width * 2 - self.shift_range * image.width)
         shift_y = round(np.random.rand() * self.shift_range * image.height * 2 - self.shift_range * image.height)
         flip = np.random.rand() > 0.5
