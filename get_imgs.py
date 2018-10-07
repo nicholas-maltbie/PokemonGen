@@ -42,6 +42,11 @@ def main(image_dir = "imgs", pokemon_list = "list.csv", num_tasks = 32, log=True
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Downlaod all pokemon images")
+    parser.add_argument("download_dir", help="Directory to downlaod images to")
+    parser.add_argument("pokemon_list", help="List of all pokemon, numbers and related data")
+    parser.add_argument("-q", "--quiet", dest="quiet", action='store_true', help="Should downlaod information be shwon")
+    parser.add_argument("-t", "--num_threads", dest="num_threads", metavar=32, type=int, help="Number of threads to use when downloading images (default 32)")
+    args = parser.parse_args()
     
-    main()
+    main(image_dir=args.download_dir, pokemon_list=args.pokemon_list, num_tasks=args.num_threads, log=not args.quiet)
     
